@@ -8,7 +8,7 @@ class TMDB(Site):
         self.LOGIN_PASSWORD_SELECTOR = login_form_selector + "//input[@id='password']"
         self.LOGIN_BUTTON_SELECTOR = login_form_selector + "//input[@type='submit']"
         super(TMDB, self).__init__(args)
-        self.MY_RATINGS_URL = 'https://www.themoviedb.org/account/{username}/discover/rated/movie'.format(
+        self.MY_RATINGS_URL = 'https://www.themoviedb.org/account/{username}/discover/favorites/movie'.format(
             username=self.USERNAME
         )
 
